@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ads&amp;Ads | Marketing, tecnologia e dados conectados</title>
+<meta name="description" content="Estratégia unificada, dados e automação em um ecossistema completo para gerar performance, eficiência e crescimento real para a sua empresa.">
+
+<!-- =========================================================
+     1) CONSENT MODE V2 — padrão "negado" até o banner liberar
+     (manter ANTES do GTM)
+     ========================================================= -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
+</script>
+
+<!-- =========================================================
+     2) GOOGLE TAG MANAGER — troque GTM-XXXXXXX pelo seu ID
+     ========================================================= -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================
+   CORES E TOKENS — edite aqui para mudar a identidade toda
+   ========================================================= */
+:root{
+  --roxo: #6d28ff;
+  --roxo-claro: #a78bfa;
+  --azul: #3b5bff;
+  --ciano: #38bdf8;
+  --tinta: #0f1033;          /* texto principal */
+  --tinta-suave: #4a4d72;    /* texto secundário */
+  --fundo: #f3f2ff;          /* fundo claro */
+  --fundo-escuro: #07082a;   /* faixa escura */
+  --vidro: rgba(255,255,255,.62);
+  --vidro-borda: rgba(255,255,255,.9);
+  --grad: linear-gradient(90deg, var(--roxo), var(--azul));
+  --raio: 20px;
+  --max: 1200px;
+  --fonte: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{font-family:var(--fonte);color:var(--tinta);background:var(--fundo);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--ciano);outline-offset:3px;border-radius:8px}
+.container{width:min(var(--max), 100% - 40px);margin-inline:auto}
+
+/* Fundo luminoso da área clara */
+.luz{position:relative;isolation:isolate}
+.luz::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:
+   radial-gradient(60% 50% at 85% 10%, rgba(167,139,250,.45), transparent 70%),
+   radial-gradient(50% 40% at 0% 40%, rgba(56,189,248,.25), transparent 70%),
+   radial-gradient(40% 40% at 100% 90%, rgba(109,40,255,.18), transparent 70%);}
+
+/* Textos utilitários */
+.sobretitulo{font-size:.75rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--roxo);margin-bottom:10px}
+.destaque{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1{font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.1;font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.18;font-weight:800;letter-spacing:-.015em}
+h3{font-size:1.05rem;font-weight:700}
+.lead{color:var(--tinta-suave);font-size:1.05rem;max-width:56ch}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:.9rem;cursor:pointer;border:0;transition:transform .2s, box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primario{background:var(--grad);color:#fff;box-shadow:0 10px 30px rgba(109,40,255,.45), inset 0 0 0 1px rgba(255,255,255,.25)}
+.btn-primario:hover{box-shadow:0 14px 40px rgba(109,40,255,.6)}
+.btn-whats{background:#fff;color:var(--tinta);box-shadow:0 6px 20px rgba(15,16,51,.08), inset 0 0 0 1px rgba(15,16,51,.08)}
+.btn-whats svg{width:20px;height:20px;color:#25d366}
+
+/* ===== HEADER ===== */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;backdrop-filter:blur(14px);background:rgba(243,242,255,.7);border-bottom:1px solid rgba(255,255,255,.6)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem}
+.logo svg{width:38px;height:auto}
+.menu{display:flex;gap:30px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.menu a:hover{color:var(--roxo)}
+.nav .btn{padding:11px 20px;font-size:.78rem}
+@media (max-width:900px){.menu{display:none}}
+
+/* ===== HERO ===== */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:60px 0 40px}
+.hero .lead{margin:20px 0 32px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero-arte{position:relative}
+@media (max-width:900px){.hero{grid-template-columns:1fr;padding-top:36px}.hero-arte{display:none}}
+
+/* Animação sutil do logo central da arte */
+@keyframes flutua{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.flutua{animation:flutua 6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.flutua{animation:none}.btn{transition:none}}
+
+.topo{z-index:3}
+/* ===== NÚMEROS ===== */
+.numeros{display:grid;grid-template-columns:repeat(5,1fr);background:rgba(255,255,255,.94);border:1px solid var(--vidro-borda);border-radius:var(--raio);backdrop-filter:blur(12px);box-shadow:0 20px 50px rgba(59,91,255,.1);margin-bottom:-50px;position:relative;z-index:2}
+.numeros div{text-align:center;padding:22px 10px}
+.numeros div + div{border-left:1px solid rgba(15,16,51,.08)}
+.numeros strong{display:block;font-size:1.6rem;font-weight:800;color:var(--azul)}
+.numeros span{font-size:.82rem;color:var(--tinta-suave)}
+@media (max-width:800px){.numeros{grid-template-columns:repeat(2,1fr)}.numeros div + div{border-left:0}.numeros div:last-child{grid-column:span 2}}
+
+/* ===== DORES (faixa escura) ===== */
+.escuro{background:var(--fundo-escuro);color:#e8e8ff;position:relative;overflow:hidden;padding:120px 0 90px}
+.escuro::before{content:"";position:absolute;inset:0;
+  background:
+   radial-gradient(50% 60% at 0% 100%, rgba(109,40,255,.55), transparent 70%),
+   radial-gradient(45% 55% at 100% 0%, rgba(59,91,255,.5), transparent 70%),
+   radial-gradient(30% 30% at 50% 50%, rgba(56,189,248,.12), transparent 70%);}
+.escuro > *{position:relative}
+.dores-topo{text-align:center;max-width:760px;margin:0 auto 50px}
+.dores-topo .pre{font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.95rem;color:#fff}
+.dores-topo h2{color:#c4b5fd;margin:6px 0 16px}
+.dores-topo p{color:#b8b9e0}
+.dores{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.dor{display:flex;gap:22px;align-items:flex-start;padding:28px;border-radius:var(--raio);background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid rgba(167,139,250,.55);box-shadow:0 0 30px rgba(109,40,255,.25), inset 0 0 20px rgba(109,40,255,.12)}
+.dor .icone{flex:none;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%, #2a2c7a, #11123e);border:1px solid rgba(167,139,250,.5)}
+.dor .icone svg{width:28px;height:28px;color:#a78bfa}
+.dor h3{color:#fff;margin-bottom:6px}
+.dor p{color:#b8b9e0;font-size:.92rem}
+@media (max-width:800px){.dores{grid-template-columns:1fr}}
+
+/* ===== SEÇÕES CLARAS ===== */
+.secao{padding:80px 0 20px}
+.cabecalho{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end;margin-bottom:44px}
+.cabecalho p{color:var(--tinta-suave);font-size:.95rem}
+@media (max-width:800px){.cabecalho{grid-template-columns:1fr;gap:14px}}
+
+/* Fluxo de abordagens */
+.fluxo{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;list-style:none}
+.fluxo li{flex:1;text-align:center;font-weight:700;font-size:.88rem;position:relative}
+.fluxo li:not(:last-child)::after{content:"";position:absolute;top:44px;right:-14%;width:28%;height:2px;background:var(--grad);opacity:.6}
+.bolha{width:88px;height:88px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fff,#e9e6ff);box-shadow:0 12px 30px rgba(109,40,255,.2), inset 0 0 0 1px #fff}
+.bolha svg{width:36px;height:36px;color:var(--azul)}
+@media (max-width:800px){.fluxo{flex-wrap:wrap;justify-content:center}.fluxo li{flex:0 0 30%;margin-bottom:24px}.fluxo li::after{display:none}}
+
+/* Escopo */
+.escopo{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cartao{background:var(--vidro);border:1px solid var(--vidro-borda);border-radius:var(--raio);padding:24px;backdrop-filter:blur(10px);box-shadow:0 14px 40px rgba(59,91,255,.08)}
+.cartao-topo{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.cartao-topo svg{width:30px;height:30px;color:var(--roxo);flex:none}
+.cartao h3{font-size:.95rem}
+.checks{list-style:none;display:grid;gap:10px;font-size:.88rem;color:var(--tinta-suave)}
+.checks li{display:flex;gap:10px}
+.checks li::before{content:"";flex:none;width:16px;height:16px;margin-top:3px;background:var(--azul);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 12l5 5L20 6' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 12l5 5L20 6' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
+@media (max-width:1000px){.escopo{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.escopo{grid-template-columns:1fr}}
+
+/* Processo */
+.processo{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;list-style:none;counter-reset:passo}
+.passo{display:flex;gap:16px;align-items:center;background:var(--vidro);border:1px solid var(--vidro-borda);border-radius:var(--raio);padding:20px}
+.passo .num{flex:none;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:1.2rem;color:var(--azul);background:#fff;box-shadow:0 8px 20px rgba(59,91,255,.15)}
+.passo h3{font-size:.95rem}
+.passo p{font-size:.82rem;color:var(--tinta-suave)}
+@media (max-width:1000px){.processo{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.processo{grid-template-columns:1fr}}
+
+/* Ferramentas — substitua os nomes pelos SVGs oficiais se quiser */
+.ferramentas{display:flex;flex-wrap:wrap;gap:10px;background:var(--vidro);border:1px solid var(--vidro-borda);border-radius:var(--raio);padding:22px}
+.ferramentas span{padding:9px 16px;border-radius:999px;background:#fff;font-size:.85rem;font-weight:600;box-shadow:0 4px 12px rgba(15,16,51,.05)}
+
+/* Cases */
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.case{display:flex;gap:18px;background:var(--vidro);border:1px solid var(--vidro-borda);border-radius:var(--raio);padding:24px}
+.case svg{width:40px;height:40px;color:var(--roxo);flex:none}
+.case small{font-weight:700;font-size:.78rem}
+.case strong{display:block;color:var(--azul);font-size:1.05rem;margin:4px 0 8px}
+.case p{font-size:.85rem;color:var(--tinta-suave);font-style:italic}
+@media (max-width:900px){.cases{grid-template-columns:1fr}}
+
+/* CTA final */
+.cta-final{margin:80px auto 0;border-radius:28px;background:var(--fundo-escuro);color:#fff;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden}
+.cta-final::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 120% at 100% 50%, rgba(109,40,255,.6), transparent 70%)}
+.cta-final > *{position:relative}
+.cta-final h2{font-size:1.5rem}
+.cta-final p{color:#b8b9e0;max-width:46ch}
+
+/* Footer */
+footer{padding:40px 0 30px}
+.rodape{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:.82rem;color:var(--tinta-suave)}
+.rodape nav{display:flex;gap:22px;flex-wrap:wrap}
+</style>
+</head>
+
+<body>
+<!-- GTM (noscript) — troque o ID -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Ícones reutilizáveis (use <svg><use href="#nome"/></svg>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gradLogo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset=".5" stop-color="#6d28ff"/><stop offset="1" stop-color="#c026d3"/></linearGradient>
+  </defs>
+  <symbol id="i-logo" viewBox="0 0 64 40"><path d="M6 34 L18 8 L32 28 L46 8 L58 34" fill="none" stroke="url(#gradLogo)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-busca" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-barras" viewBox="0 0 24 24"><rect x="3" y="13" width="4" height="8" rx="1.5" fill="currentColor"/><rect x="10" y="8" width="4" height="13" rx="1.5" fill="currentColor"/><rect x="17" y="3" width="4" height="18" rx="1.5" fill="currentColor"/></symbol>
+  <symbol id="i-engrenagem" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.7 7.7 0 0 0-1.7-1L15 3h-4l-.4 2.9a7.7 7.7 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.7 7.7 0 0 0 1.7 1L11 21h4l.4-2.9a7.7 7.7 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></symbol>
+  <symbol id="i-banco" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3" fill="currentColor"/><path fill="currentColor" d="M4 7.5v4c0 1.7 3.6 3 8 3s8-1.3 8-3v-4c-1.7 1.4-4.8 2-8 2s-6.3-.6-8-2zm0 6.5v4c0 1.7 3.6 3 8 3s8-1.3 8-3v-4c-1.7 1.4-4.8 2-8 2s-6.3-.6-8-2z"/></symbol>
+  <symbol id="i-pessoas" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.2" fill="currentColor"/><circle cx="5.5" cy="9" r="2.4" fill="currentColor"/><circle cx="18.5" cy="9" r="2.4" fill="currentColor"/><path fill="currentColor" d="M6.5 20c0-3.3 2.5-6 5.5-6s5.5 2.7 5.5 6zM1 19c0-2.5 1.8-4.5 4-4.5.6 0 1.1.1 1.6.4A7.6 7.6 0 0 0 5 19zm22 0h-4a7.6 7.6 0 0 0-1.6-4.1c.5-.3 1-.4 1.6-.4 2.2 0 4 2 4 4.5z"/></symbol>
+  <symbol id="i-cresce" viewBox="0 0 24 24"><rect x="3" y="14" width="3.5" height="7" rx="1" fill="currentColor"/><rect x="8.5" y="11" width="3.5" height="10" rx="1" fill="currentColor"/><rect x="14" y="8" width="3.5" height="13" rx="1" fill="currentColor"/><path d="M4 9 11 4l3 2 6-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 2h4v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-pizza" viewBox="0 0 24 24"><path fill="currentColor" d="M11 3a9 9 0 1 0 9.9 10H11z"/><path fill="currentColor" opacity=".6" d="M13 1v10h10A10 10 0 0 0 13 1z"/></symbol>
+  <symbol id="i-mega" viewBox="0 0 24 24"><path fill="currentColor" d="M3 10v4c0 .6.4 1 1 1h2l4 5h2l-1.6-5H12l8 4V5l-8 4H4c-.6 0-1 .4-1 1z"/></symbol>
+  <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></symbol>
+  <symbol id="i-carrinho" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h2.5l2.4 11.2c.1.5.6.8 1.1.8h9.2c.5 0 .9-.3 1-.8L21 7H7"/><circle cx="9.5" cy="19.5" r="1.8" fill="currentColor"/><circle cx="17.5" cy="19.5" r="1.8" fill="currentColor"/></symbol>
+  <symbol id="i-coracao" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></symbol>
+  <symbol id="i-capelo" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 1 8.5 12 14l9-4.5V16h2V8.5zM5 12.2V16c0 1.7 3.1 3.5 7 3.5s7-1.8 7-3.5v-3.8L12 15.7z"/></symbol>
+</svg>
+
+<header>
+  <div class="container nav">
+    <a href="#inicio" class="logo" aria-label="Ads&Ads - início"><svg viewBox="0 0 64 40"><use href="#i-logo"/></svg>ADS&amp;ADS</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#cases">Cases</a><a href="#blog">Blog</a><a href="#contato">Contato</a>
+    </nav>
+    <a href="#contato" class="btn btn-primario" data-cta="header_duvida">Quero tirar dúvida</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ===== HERO ===== -->
+<section class="luz topo">
+  <div class="container hero">
+    <div>
+      <p class="sobretitulo">Marketing + Tecnologia + Resultados</p>
+      <h1>Do marketing à tecnologia, <span class="destaque">soluções que se conectam</span> ao que o seu negócio precisa agora.</h1>
+      <p class="lead">Estratégia unificada, dados e automação em um ecossistema completo para gerar performance, eficiência e crescimento real para a sua empresa.</p>
+      <div class="hero-ctas">
+        <a href="#contato" class="btn btn-primario" data-cta="hero_duvida">Quero tirar dúvida</a>
+        <a href="#" class="btn btn-whats js-whats" data-cta="hero_whatsapp"><svg><use href="#i-whats"/></svg>Falar no WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- ARTE DO HERO
+         Para usar sua imagem 3D no lugar desta ilustração, apague o <svg> abaixo e coloque:
+         <img src="hero.png" alt="" width="640" height="520">  (suba hero.png junto do index.html) -->
+    <div class="hero-arte" aria-hidden="true">
+      <svg viewBox="0 0 520 440">
+        <defs>
+          <linearGradient id="painel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e2266"/><stop offset="1" stop-color="#0b0c35"/></linearGradient>
+          <filter id="brilho"><feGaussianBlur stdDeviation="6"/></filter>
+        </defs>
+        <ellipse cx="260" cy="250" rx="230" ry="120" fill="none" stroke="#a78bfa" stroke-width="2" opacity=".35"/>
+        <ellipse cx="260" cy="250" rx="170" ry="85" fill="none" stroke="#38bdf8" stroke-width="2" opacity=".35"/>
+        <!-- Painéis -->
+        <g>
+          <rect x="70" y="30" width="130" height="90" rx="16" fill="url(#painel)" stroke="#a78bfa" stroke-opacity=".7"/>
+          <rect x="92" y="88" width="12" height="18" rx="3" fill="#38bdf8"/><rect x="112" y="72" width="12" height="34" rx="3" fill="#6d28ff"/><rect x="132" y="60" width="12" height="46" rx="3" fill="#a78bfa"/><rect x="152" y="50" width="12" height="56" rx="3" fill="#3b5bff"/>
+          <rect x="320" y="20" width="140" height="95" rx="16" fill="url(#painel)" stroke="#a78bfa" stroke-opacity=".7"/>
+          <rect x="338" y="40" width="50" height="34" rx="6" fill="#3b5bff" opacity=".8"/><rect x="396" y="40" width="48" height="8" rx="4" fill="#a78bfa"/><rect x="396" y="56" width="36" height="8" rx="4" fill="#38bdf8"/><rect x="338" y="84" width="106" height="10" rx="5" fill="#6d28ff" opacity=".7"/>
+          <rect x="20" y="170" width="120" height="90" rx="16" fill="url(#painel)" stroke="#a78bfa" stroke-opacity=".7"/>
+          <polyline points="36,238 60,220 80,228 104,198 124,190" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+          <rect x="390" y="160" width="115" height="100" rx="16" fill="url(#painel)" stroke="#a78bfa" stroke-opacity=".7"/>
+          <circle cx="425" cy="195" r="14" fill="#3b5bff"/><circle cx="460" cy="215" r="10" fill="#a78bfa"/><rect x="410" y="228" width="80" height="10" rx="5" fill="#6d28ff"/>
+          <rect x="90" y="320" width="130" height="90" rx="16" fill="url(#painel)" stroke="#a78bfa" stroke-opacity=".7"/>
+          <rect x="108" y="340" width="40" height="52" rx="6" fill="#3b5bff" opacity=".8"/><rect x="156" y="370" width="10" height="22" rx="3" fill="#38bdf8"/><rect x="172" y="356" width="10" height="36" rx="3" fill="#a78bfa"/><rect x="188" y="346" width="10" height="46" rx="3" fill="#6d28ff"/>
+          <rect x="300" y="320" width="140" height="90" rx="16" fill="url(#painel)" stroke="#a78bfa" stroke-opacity=".7"/>
+          <rect x="320" y="340" width="100" height="10" rx="5" fill="#38bdf8"/><rect x="320" y="360" width="70" height="10" rx="5" fill="#a78bfa"/><rect x="320" y="380" width="86" height="10" rx="5" fill="#6d28ff"/>
+        </g>
+        <!-- Logo central -->
+        <g class="flutua">
+          <path d="M150 300 L205 170 L260 260 L315 170 L370 300" fill="none" stroke="url(#gradLogo)" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" filter="url(#brilho)" opacity=".7"/>
+          <path d="M150 300 L205 170 L260 260 L315 170 L370 300" fill="none" stroke="url(#gradLogo)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <!-- NÚMEROS — edite os valores -->
+  <div class="container">
+    <div class="numeros">
+      <div><strong>+10</strong><span>anos de experiência</span></div>
+      <div><strong>+100</strong><span>clientes atendidos</span></div>
+      <div><strong>+3M</strong><span>em investimento gerenciado</span></div>
+      <div><strong>+100</strong><span>projetos entregues</span></div>
+      <div><strong>+50</strong><span>segmentos atendidos</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DORES ===== -->
+<section class="escuro" id="sobre">
+  <div class="container">
+    <div class="dores-topo">
+      <p class="pre">Nem sempre falta esforço. Às vezes,</p>
+      <h2>falta estratégia e o ecossistema está travando.</h2>
+      <p>Muitas empresas investem tempo e dinheiro, mas não têm o resultado que esperavam. Isso acontece quando marketing, tecnologia, dados e processos não trabalham juntos.</p>
+    </div>
+    <div class="dores">
+      <article class="dor"><div class="icone"><svg><use href="#i-barras"/></svg></div><div><h3>Investimento que não retorna</h3><p>Campanhas até geram movimento, mas o resultado não vem de forma consistente e previsível.</p></div></article>
+      <article class="dor"><div class="icone"><svg><use href="#i-pessoas"/></svg></div><div><h3>Aquisição que não vira venda</h3><p>Há tráfego e oportunidades, mas o processo comercial não converte como deveria.</p></div></article>
+      <article class="dor"><div class="icone"><svg><use href="#i-engrenagem"/></svg></div><div><h3>Processos manuais e ineficientes</h3><p>Tarefas que poderiam ser automatizadas ainda consomem tempo e recursos da equipe.</p></div></article>
+      <article class="dor"><div class="icone"><svg><use href="#i-pizza"/></svg></div><div><h3>Falta de visão unificada</h3><p>Os dados estão espalhados e fica difícil tomar decisões rápidas e precisas.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<div class="luz">
+
+<!-- ===== ABORDAGENS ===== -->
+<section class="secao">
+  <div class="container">
+    <div class="cabecalho">
+      <div><p class="sobretitulo">Nossas abordagens</p><h2>A solução certa não precisa ser maior. <span class="destaque">Precisa estar conectada ao que vem antes e depois.</span></h2></div>
+      <p>Combinamos marketing, tecnologia, dados e processos em um fluxo contínuo, de ponta a ponta, para gerar resultados reais em cada etapa do seu crescimento.</p>
+    </div>
+    <ol class="fluxo">
+      <li><div class="bolha"><svg><use href="#i-busca"/></svg></div>Diagnóstico<br>e Estratégia</li>
+      <li><div class="bolha"><svg><use href="#i-barras"/></svg></div>Aquisição<br>de Clientes</li>
+      <li><div class="bolha"><svg><use href="#i-engrenagem"/></svg></div>Automação<br>e Processos</li>
+      <li><div class="bolha"><svg><use href="#i-banco"/></svg></div>Dados<br>e Inteligência</li>
+      <li><div class="bolha"><svg><use href="#i-pessoas"/></svg></div>Conversão<br>e Vendas</li>
+      <li><div class="bolha"><svg><use href="#i-cresce"/></svg></div>Crescimento<br>Contínuo</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== ESCOPO ===== -->
+<section class="secao" id="servicos">
+  <div class="container">
+    <div class="cabecalho">
+      <div><p class="sobretitulo">Escopo e entregáveis</p><h2>O que podemos fazer <span class="destaque">pelo seu negócio.</span></h2></div>
+      <p>Soluções integradas e modulares, que se adaptam ao momento e aos objetivos da sua empresa.</p>
+    </div>
+    <div class="escopo">
+      <article class="cartao"><div class="cartao-topo"><svg><use href="#i-mega"/></svg><h3>Marketing e Performance</h3></div>
+        <ul class="checks"><li>Estratégia e planejamento</li><li>Gestão de mídia paga</li><li>Conteúdo e criativos</li><li>Acompanhamento e otimização</li></ul></article>
+      <article class="cartao"><div class="cartao-topo"><svg><use href="#i-engrenagem"/></svg><h3>Tecnologia e Automação</h3></div>
+        <ul class="checks"><li>Integrações e APIs</li><li>Automações de processos</li><li>Implantação de sistemas</li><li>Soluções sob medida</li></ul></article>
+      <article class="cartao"><div class="cartao-topo"><svg><use href="#i-barras"/></svg><h3>Dados e Inteligência</h3></div>
+        <ul class="checks"><li>Estruturação de dados</li><li>Dashboards e BI</li><li>Análises e insights</li><li>Tomada de decisão orientada</li></ul></article>
+      <article class="cartao"><div class="cartao-topo"><svg><use href="#i-pessoas"/></svg><h3>Consultoria e Operação</h3></div>
+        <ul class="checks"><li>Diagnósticos de oportunidades</li><li>Apoio na execução</li><li>Treinamento de equipes</li><li>Crescimento sustentável</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESSO ===== -->
+<section class="secao">
+  <div class="container">
+    <p class="sobretitulo">Nosso processo</p>
+    <h2 style="margin-bottom:32px">Da estratégia à execução, <span class="destaque">sem complicação.</span></h2>
+    <ol class="processo">
+      <li class="passo"><span class="num">01</span><div><h3>Diagnóstico</h3><p>Entendemos o cenário e os seus objetivos</p></div></li>
+      <li class="passo"><span class="num">02</span><div><h3>Planejamento</h3><p>Definimos a estratégia e o plano de ação</p></div></li>
+      <li class="passo"><span class="num">03</span><div><h3>Execução</h3><p>Implementamos e integramos as soluções</p></div></li>
+      <li class="passo"><span class="num">04</span><div><h3>Acompanhamento</h3><p>Medimos, otimizamos e evoluímos juntos</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== FERRAMENTAS ===== -->
+<section class="secao">
+  <div class="container">
+    <div class="cabecalho">
+      <div><p class="sobretitulo">Ferramentas e plataformas</p><h2>Trabalhamos com as principais <span class="destaque">soluções do mercado.</span></h2></div>
+      <p>Integramos as ferramentas certas para o seu ecossistema.</p>
+    </div>
+    <!-- Troque cada <span> por <img src="logos/nome.svg" alt="Nome" height="28"> se quiser os logos oficiais -->
+    <div class="ferramentas">
+      <span>Google Ads</span><span>Meta Ads</span><span>YouTube</span><span>Google Analytics 4</span><span>Google Tag Manager</span><span>HubSpot</span><span>RD Station</span><span>Salesforce</span><span>Notion</span><span>WhatsApp Business</span><span>Slack</span><span>ChatGPT</span><span>Figma</span><span>Webflow</span><span>AWS</span><span>Looker Studio</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CASES ===== -->
+<section class="secao" id="cases">
+  <div class="container">
+    <h2 style="margin-bottom:32px">Mais resultado, menos complexidade.<br><span class="destaque">Histórias reais de quem já evoluiu com a gente.</span></h2>
+    <div class="cases">
+      <article class="case"><svg><use href="#i-carrinho"/></svg><div><small>E-commerce</small><strong>+100% de receita em 6 meses</strong><p>“Estratégia, automação e mídia integrada que realmente funcionam.”</p></div></article>
+      <article class="case"><svg><use href="#i-coracao"/></svg><div><small>Saúde</small><strong>3x mais leads qualificados</strong><p>“Processo comercial mais eficiente e previsível.”</p></div></article>
+      <article class="case"><svg><use href="#i-capelo"/></svg><div><small>Educação</small><strong>+70% de matrículas</strong><p>“Crescimento consistente com dados e tecnologia.”</p></div></article>
+    </div>
+
+    <!-- ===== CTA FINAL ===== -->
+    <div class="cta-final" id="contato">
+      <div><h2>Vamos conversar sobre o seu próximo passo?</h2><p>Entenda como conectar marketing, tecnologia e dados para gerar resultados reais no seu negócio.</p></div>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primario js-whats" data-cta="final_duvida">Quero tirar dúvida</a>
+        <a href="#" class="btn btn-whats js-whats" data-cta="final_whatsapp"><svg><use href="#i-whats"/></svg>Falar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container rodape">
+    <a href="#inicio" class="logo"><svg viewBox="0 0 64 40"><use href="#i-logo"/></svg>ADS&amp;ADS</a>
+    <nav aria-label="Rodapé"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#cases">Cases</a><a href="#blog">Blog</a><a href="#contato">Contato</a></nav>
+    <span>© <span id="ano"></span> Ads&amp;Ads. Todos os direitos reservados.</span>
+  </div>
+</footer>
+</div>
+</main>
+
+<!-- =========================================================
+     3) CONFIGURAÇÃO + TRACKING
+     ========================================================= -->
+<script>
+const CONFIG = {
+  whatsapp: '5561999999999',  // DDI+DDD+número, só dígitos
+  mensagem: 'Olá! Vim pelo site da Ads&Ads e quero tirar uma dúvida.'
+};
+
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+// Persiste UTMs/click IDs da primeira visita na sessão
+(function(){
+  const chaves = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid','wbraid','gbraid'];
+  const p = new URLSearchParams(location.search);
+  chaves.forEach(k => { if (p.get(k)) { try { sessionStorage.setItem(k, p.get(k)); } catch(e){} } });
+})();
+function utms(){
+  const o = {};
+  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(k => {
+    try { const v = sessionStorage.getItem(k); if (v) o[k] = v; } catch(e){}
+  });
+  return o;
+}
+
+// Monta link do WhatsApp com a origem no texto
+document.querySelectorAll('.js-whats').forEach(a => {
+  const u = utms();
+  const origem = u.utm_source ? ` [${u.utm_source}/${u.utm_campaign || '-'}]` : '';
+  a.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.mensagem + origem)}`;
+  a.target = '_blank'; a.rel = 'noopener';
+});
+
+// Evento único de clique em CTA -> dataLayer (crie o acionador "cta_click" no GTM)
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-cta]');
+  if (!el) return;
+  dataLayer.push(Object.assign({
+    event: 'cta_click',
+    cta_id: el.dataset.cta,
+    cta_text: el.textContent.trim(),
+    cta_destino: el.href && el.href.includes('wa.me') ? 'whatsapp' : 'ancora'
+  }, utms()));
+});
+
+// Profundidade de rolagem por seção (25/50/75/100)
+(function(){
+  const marcos = [25,50,75,100], enviados = new Set();
+  addEventListener('scroll', () => {
+    const pct = Math.round((scrollY + innerHeight) / document.body.scrollHeight * 100);
+    marcos.forEach(m => { if (pct >= m && !enviados.has(m)) { enviados.add(m); dataLayer.push({event:'scroll_depth', percent:m}); } });
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
