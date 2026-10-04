@@ -1,9 +1,13 @@
 window.ADS_CONFIG = {
-  // Preencha quando quiser ativar o WhatsApp.
-  // Exemplo Brasil: 5561999999999 (somente números, com 55 + DDD + número)
+  // WhatsApp: somente números com 55 + DDD + número. Ex.: 5561999999999
   whatsappNumber: '',
 
-  // Cole aqui o webhook do Make/n8n/Google Apps Script quando configurar captação de leads.
-  // Enquanto estiver vazio, o formulário usa o WhatsApp como fallback se houver número configurado.
-  leadWebhook: ''
+  // Webhook para Make / n8n / Google Apps Script. Pode ficar vazio enquanto você só valida o layout.
+  leadWebhook: '',
+
+  // Rodapé / redes sociais. Preencha quando quiser ativar os links.
+  instagramUrl: '',
+  linkedinUrl: '',
+  youtubeUrl: '',
+  email: 'contato@adsads.com.br'
 };

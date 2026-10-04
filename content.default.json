@@ -1,22 +1,5 @@
 {
-  "__styles": {
-    "[data-edit=\"hero.headline\"]": {
-      "desktop": {
-        "font-size": "51px",
-        "color": "#1e0b23"
-      }
-    },
-    "[data-edit=\"solution.headline\"]": {
-      "desktop": {
-        "font-size": "50px"
-      }
-    },
-    "[data-edit=\"fit.eyebrow\"]": {
-      "desktop": {
-        "font-size": "12px"
-      }
-    }
-  },
+  "__styles": {},
   "__images": {},
   "__sectionOrder": [
     "hero",
@@ -35,7 +18,7 @@
   "nav.contact": "Contato",
   "nav.cta": "QUERO TIRAR DÚVIDA",
   "hero.eyebrow": "ESTRATÉGIA • MARKETING • DADOS • TECNOLOGIA",
-  "hero.headline": "Do marketing à tecnologia, soluções que se conectam ao que o seu negócio precisa agora.",
+  "hero.headline": "Do marketing à tecnologia,\nsoluções que se conectam ao que\no seu negócio precisa agora.",
   "hero.subheadline": "Nosso escopo reúne soluções de Growth, Tráfego Pago, Páginas, Tracking, CRM, Dados, Marketing Ops e Tecnologia para atender desde necessidades específicas até operações completas de crescimento.",
   "hero.primary": "Solicitar diagnóstico",
   "hero.secondary": "Falar no WhatsApp",
@@ -159,5 +142,13 @@
   "contact.text": "Conte o cenário da sua empresa. A primeira conversa serve para entender o contexto e identificar o melhor ponto de entrada.",
   "contact.primary": "Solicitar diagnóstico",
   "contact.secondary": "Falar no WhatsApp",
-  "footer.copy": "© ADS & ADS. Todos os direitos reservados."
+  "footer.copy": "© ADS & ADS. Todos os direitos reservados.",
+  "scope.headline.first": "O escopo muda.",
+  "scope.headline.second": "O padrão de entrega, não.",
+  "fit.yes.headline": "Faz sentido quando você precisa...",
+  "fit.yes.1": "identificar o gargalo antes de investir mais",
+  "fit.yes.2": "conectar marketing, dados, CRM, processos ou tecnologia",
+  "fit.yes.3": "estruturar uma frente específica sem perder a visão do todo",
+  "fit.yes.4": "criar uma operação mais mensurável, documentada e preparada para evoluir",
+  "fit.qualifier.eyebrow": "FIT / QUALIFICAÇÃO"
 }

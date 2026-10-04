@@ -1,18 +1,20 @@
-ADS & ADS — VERSÃO DE PRODUÇÃO PARA GITHUB/CLOUDFLARE
+ADS & ADS — LP V2 | ARQUIVOS PARA SUBIR NO GITHUB
+====================================================
 
-SUBA EXATAMENTE ESTES 7 ARQUIVOS NA RAIZ DO REPOSITÓRIO:
+SUBA ESTES ARQUIVOS DIRETAMENTE NA RAIZ DO REPOSITÓRIO:
+- index.html
+- styles.css
+- app.js
+- site.config.js
+- content.default.json
+- logo-symbol.png
+- hero-ecosystem.png
 
-1. index.html
-2. styles.css
-3. app.js
-4. site.config.js
-5. content.default.json
-6. logo-symbol.png
-7. hero-ecosystem.png
+Os arquivos PASSO_A_PASSO_GITHUB.md e LEIA_ANTES_DE_SUBIR.txt são só instruções; podem ser enviados ou não.
 
-IMPORTANTE:
-- Não crie pasta assets.
-- Não envie este arquivo LEIA_ANTES_DE_SUBIR.txt; ele é só uma instrução local.
-- Se o Chrome traduzir visualmente os nomes na tela do GitHub (ex.: styles.css aparecer como "estilos.css"), isso pode ser apenas tradução automática da página. O arquivo enviado continua com o nome original. Para evitar confusão, desative a tradução automática do GitHub durante o upload.
-- O index.html precisa ficar diretamente na raiz do repositório.
-- Depois do commit, aguarde o deploy automático do Cloudflare.
+IMPORTANTE
+1. NÃO envie o ZIP para o GitHub. Extraia primeiro.
+2. NÃO crie uma pasta externa no repositório. index.html precisa ficar na raiz.
+3. O projeto Cloudflare já conectado ao GitHub deve gerar um novo deploy automaticamente após o commit.
+4. Enquanto estiver homologando, use https://adsandads-lp.pages.dev e NÃO conecte o domínio final ainda.
+5. Formulários ainda precisam de whatsappNumber e/ou leadWebhook no site.config.js para captar leads de verdade.
