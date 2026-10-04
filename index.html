@@ -11,7 +11,8 @@
 <body>
   <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="ambient ambient-c"></div>
 
-  <header class="site-header liquid-shell">
+  <header class="header-band">
+    <div class="site-header liquid-shell">
     <a class="brand" href="#top" aria-label="ADS & ADS">
       <img src="logo-symbol.png" alt="Símbolo ADS & ADS" id="brandSymbol"/>
       <span class="brand-word">ADS <em>&amp;</em> ADS</span>
@@ -23,6 +24,7 @@
       <a class="jelly-nav" data-edit="nav.contact" href="#contato">Contato</a>
     </nav>
     <button class="btn btn-gradient btn-small jelly" data-action="quick" data-track-location="header"><span data-edit="nav.cta">QUERO TIRAR DÚVIDA</span><span>→</span></button>
+    </div>
   </header>
 
   <main id="top">
@@ -30,9 +32,11 @@
       <div class="hero-inner">
         <div class="hero-copy">
           <p class="eyebrow" data-edit="hero.eyebrow">ESTRATÉGIA • MARKETING • DADOS • TECNOLOGIA</p>
-          <h1 data-edit="hero.headline">Do marketing à tecnologia,
-soluções que se conectam ao que
-o seu negócio precisa agora.</h1>
+          <h1 class="hero-headline" aria-label="Do marketing à tecnologia, soluções que se conectam ao que o seu negócio precisa agora.">
+            <span data-edit="hero.headline.1">Do marketing à tecnologia,</span>
+            <span data-edit="hero.headline.2">soluções que se conectam</span>
+            <span data-edit="hero.headline.3">ao que o seu negócio precisa agora.</span>
+          </h1>
           <p class="lead" data-edit="hero.subheadline">Nosso escopo reúne soluções de Growth, Tráfego Pago, Páginas, Tracking, CRM, Dados, Marketing Ops e Tecnologia para atender desde necessidades específicas até operações completas de crescimento.</p>
           <div class="hero-actions">
             <button class="btn btn-gradient jelly" data-action="diagnostic" data-track-location="hero"><span data-edit="hero.primary">Solicitar diagnóstico</span><span>→</span></button>
@@ -134,11 +138,48 @@ o seu negócio precisa agora.</h1>
           <div><p class="eyebrow">FERRAMENTAS E PLATAFORMAS</p><h3 data-edit="tools.headline"></h3></div>
           <p class="support-copy" data-edit="tools.subheadline"></p>
         </div>
-        <div class="card-grid four tools-grid">
-          <article class="tool-card"><span class="tool-glow"></span><strong data-edit="tools.1.title"></strong><span data-edit="tools.1.text"></span></article>
-          <article class="tool-card"><span class="tool-glow"></span><strong data-edit="tools.2.title"></strong><span data-edit="tools.2.text"></span></article>
-          <article class="tool-card"><span class="tool-glow"></span><strong data-edit="tools.3.title"></strong><span data-edit="tools.3.text"></span></article>
-          <article class="tool-card"><span class="tool-glow"></span><strong data-edit="tools.4.title"></strong><span data-edit="tools.4.text"></span></article>
+        <div class="tools-grid-v3">
+          <article class="tool-card tool-acquisition">
+            <span class="tool-glow"></span><div class="tool-card-top"><span class="tool-kicker">AQUISIÇÃO</span><strong data-edit="tools.1.title"></strong><p data-edit="tools.1.text"></p></div>
+            <div class="logo-cloud">
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/google-ads.svg" alt="Google Ads" loading="lazy"><small>Google Ads</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/meta-icon.svg" alt="Meta" loading="lazy"><small>Meta</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/linkedin-icon.svg" alt="LinkedIn" loading="lazy"><small>LinkedIn</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/tiktok-icon.svg" alt="TikTok" loading="lazy"><small>TikTok</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/microsoft-icon.svg" alt="Microsoft Ads" loading="lazy"><small>Microsoft Ads</small></span>
+            </div>
+          </article>
+          <article class="tool-card tool-data">
+            <span class="tool-glow"></span><div class="tool-card-top"><span class="tool-kicker">DADOS</span><strong data-edit="tools.2.title"></strong><p data-edit="tools.2.text"></p></div>
+            <div class="logo-cloud">
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/google-analytics.svg" alt="Google Analytics 4" loading="lazy"><small>GA4</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/google-tag-manager.svg" alt="Google Tag Manager" loading="lazy"><small>GTM</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/looker-icon.svg" alt="Looker Studio" loading="lazy"><small>Looker Studio</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/microsoft-power-bi.svg" alt="Power BI" loading="lazy"><small>Power BI</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/google-cloud.svg" alt="BigQuery" loading="lazy"><small>BigQuery</small></span>
+            </div>
+          </article>
+          <article class="tool-card tool-crm">
+            <span class="tool-glow"></span><div class="tool-card-top"><span class="tool-kicker">CRM & AUTOMAÇÃO</span><strong data-edit="tools.3.title"></strong><p data-edit="tools.3.text"></p></div>
+            <div class="logo-cloud">
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/hubspot.svg" alt="HubSpot" loading="lazy"><small>HubSpot</small></span>
+              <span class="brand-chip"><span class="fallback-logo rd">RD</span><small>RD Station</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/pipedrive.svg" alt="Pipedrive" loading="lazy"><small>Pipedrive</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/make.svg" alt="Make" loading="lazy"><small>Make</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/n8n-icon.svg" alt="n8n" loading="lazy"><small>n8n</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/zapier-icon.svg" alt="Zapier" loading="lazy"><small>Zapier</small></span>
+            </div>
+          </article>
+          <article class="tool-card tool-web">
+            <span class="tool-glow"></span><div class="tool-card-top"><span class="tool-kicker">WEB & CRO</span><strong data-edit="tools.4.title"></strong><p data-edit="tools.4.text"></p></div>
+            <div class="logo-cloud">
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/wordpress-icon.svg" alt="WordPress" loading="lazy"><small>WordPress</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/webflow.svg" alt="Webflow" loading="lazy"><small>Webflow</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/framer.svg" alt="Framer" loading="lazy"><small>Framer</small></span>
+              <span class="brand-chip"><img src="https://api.iconify.design/logos/hotjar.svg" alt="Hotjar" loading="lazy"><small>Hotjar</small></span>
+              <span class="brand-chip"><span class="fallback-logo clarity">C</span><small>Clarity</small></span>
+            </div>
+          </article>
         </div>
         <p class="tools-manifesto" data-edit="tools.manifesto"></p>
         <div class="center-actions"><button class="btn btn-gradient jelly" data-action="diagnostic" data-track-location="scope"><span data-edit="scope.cta"></span><span>→</span></button><button class="btn btn-glass jelly" data-action="diagnostic" data-track-location="scope_secondary"><span data-edit="scope.cta2"></span></button></div>
