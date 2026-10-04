@@ -1,0 +1,18 @@
+ADS & ADS — VERSÃO DE PRODUÇÃO PARA GITHUB/CLOUDFLARE
+
+SUBA EXATAMENTE ESTES 7 ARQUIVOS NA RAIZ DO REPOSITÓRIO:
+
+1. index.html
+2. styles.css
+3. app.js
+4. site.config.js
+5. content.default.json
+6. logo-symbol.png
+7. hero-ecosystem.png
+
+IMPORTANTE:
+- Não crie pasta assets.
+- Não envie este arquivo LEIA_ANTES_DE_SUBIR.txt; ele é só uma instrução local.
+- Se o Chrome traduzir visualmente os nomes na tela do GitHub (ex.: styles.css aparecer como "estilos.css"), isso pode ser apenas tradução automática da página. O arquivo enviado continua com o nome original. Para evitar confusão, desative a tradução automática do GitHub durante o upload.
+- O index.html precisa ficar diretamente na raiz do repositório.
+- Depois do commit, aguarde o deploy automático do Cloudflare.
