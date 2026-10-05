@@ -188,16 +188,16 @@
   "solution.cluster.2.service.3": "Sites preparados para Crescimento",
   "solution.cluster.2.service.4": "Otimização de Conversão e Jornada (CRO)",
   "solution.cluster.2.service.5": "Estratégia de SEO e Conteúdo",
-  "solution.cluster.3.title": "Dados & Receita",
+  "solution.cluster.3.title": "Dados, Tracking & Receita",
   "solution.cluster.3.service.1": "Implementação de Tracking e Analytics",
   "solution.cluster.3.service.2": "Auditoria de Tracking e Mensuração",
   "solution.cluster.3.service.3": "Dashboards e BI de Marketing",
   "solution.cluster.3.service.4": "Integração de CRM e Marketing",
   "solution.cluster.3.service.5": "Inteligência Comercial e de Marketing",
   "solution.cluster.4.title": "Operações & Tecnologia",
-  "solution.cluster.4.service.1": "Operações de Marketing e Governança (Marketing Ops)",
-  "solution.cluster.4.service.2": "Auditoria de Governança",
-  "solution.cluster.4.service.3": "Documentação e Processos de Marketing (SOPs)",
-  "solution.cluster.4.service.4": "Automação e Integrações",
-  "solution.cluster.4.service.5": "Sistemas Sob Medida e Treinamentos"
+  "solution.cluster.4.service.1": "Operações de Marketing e Governança",
+  "solution.cluster.4.service.2": "Documentação e Processos de Marketing",
+  "solution.cluster.4.service.3": "Automação e Integrações",
+  "solution.cluster.4.service.4": "Sistemas Sob Medida",
+  "solution.cluster.4.service.5": "Workshops e Treinamentos"
 }

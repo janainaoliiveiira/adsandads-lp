@@ -1,4 +1,6 @@
 window.ADS_CONFIG = {
+  pageType: 'institutional',
+  service: 'geral',
   // WhatsApp: somente números com 55 + DDD + número. Ex.: 5561999999999
   whatsappNumber: '',
 
