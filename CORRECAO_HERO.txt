@@ -1,0 +1,8 @@
+ADS & ADS — V3.1.1
+
+Correção aplicada:
+- restaura a proporção correta da imagem da Hero após a otimização SEO/WebP;
+- adiciona height:auto à imagem responsiva;
+- mantém todas as melhorias da V3.1 (SEO, listas de serviços, rodapé compacto).
+
+Suba todos os arquivos desta pasta no GitHub, substituindo os atuais.
