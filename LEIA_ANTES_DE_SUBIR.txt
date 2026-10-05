@@ -1,20 +1,15 @@
-ADS & ADS — LP V2 | ARQUIVOS PARA SUBIR NO GITHUB
-====================================================
+ADS & ADS — LP V3.1 FINAL + SEO
 
-SUBA ESTES ARQUIVOS DIRETAMENTE NA RAIZ DO REPOSITÓRIO:
-- index.html
-- styles.css
-- app.js
-- site.config.js
-- content.default.json
-- logo-symbol.png
-- hero-ecosystem.png
+Para atualizar a homologação no GitHub:
+1. Extraia este ZIP.
+2. No repositório adsandads-lp: Add file > Upload files.
+3. Selecione TODOS os arquivos desta pasta (não envie o ZIP).
+4. Faça commit na branch main/principal.
+5. Aguarde a implantação verde no Cloudflare.
+6. Teste primeiro a URL específica do deploy e depois adsandads-lp.pages.dev.
 
-Os arquivos PASSO_A_PASSO_GITHUB.md e LEIA_ANTES_DE_SUBIR.txt são só instruções; podem ser enviados ou não.
-
-IMPORTANTE
-1. NÃO envie o ZIP para o GitHub. Extraia primeiro.
-2. NÃO crie uma pasta externa no repositório. index.html precisa ficar na raiz.
-3. O projeto Cloudflare já conectado ao GitHub deve gerar um novo deploy automaticamente após o commit.
-4. Enquanto estiver homologando, use https://adsandads-lp.pages.dev e NÃO conecte o domínio final ainda.
-5. Formulários ainda precisam de whatsappNumber e/ou leadWebhook no site.config.js para captar leads de verdade.
+IMPORTANTE:
+- robots.txt e sitemap.xml estão preparados para https://ads-ads.com.br/
+- a canonical também aponta para https://ads-ads.com.br/
+- peça indexação no Google SOMENTE depois que o domínio final estiver conectado e funcionando.
+- leia SEO_E_INDEXACAO.md antes de solicitar indexação.
